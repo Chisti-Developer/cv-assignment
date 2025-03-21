@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #333;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .resume-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Left Column Styling */
+  .left-column {
+    width: 35%;
+    background-color: #2d3748;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-section {
+    text-align: center;
+  }
+  
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #4a5568;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #e2e8f0;
+  }
+  
+  h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #a0aec0;
+    margin-top: 5px;
+  }
+  
+  .info-section {
+    margin: 20px 0;
+  }
+  
+  .info-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+    position: relative;
+  }
+  
+  .info-section h3::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #4a5568;
+    margin-top: 5px;
+  }
+  
+  .skills-section .skill-bar {
+    width: 100%;
+    background-color: #4a5568;
+    height: 8px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .bar {
+    height: 100%;
+    background-color: #63b3ed;
+    width: 0;
+    transition: width 0.5s ease;
+  }
+  
+  .design-bar {
+    width: 80%;
+  }
+  
+  .photography-bar {
+    width: 70%;
+  }
+  
+  .copywriting-bar {
+    width: 60%;
+  }
+  
+  /* Right Column Styling */
+  .right-column {
+    width: 65%;
+    background-color: #fff;
+    padding: 30px;
+  }
+  
+  .right-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .experience-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p span {
+    font-size: 18px;
+    color: #2d3748;
+    margin-right: 10px;
+  }
+  
+  /* Hover Effects */
+  .info-section:hover {
+    background: #edf2f7;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s ease;
+  }
+  
+  /* Animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .left-column,
+  .right-column {
+    animation: slideIn 0.8s ease-in-out;
+  }
+  
